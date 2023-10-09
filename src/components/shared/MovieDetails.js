@@ -2,33 +2,15 @@ import { Link, useParams } from "react-router-dom";
 import "./MovieDetails.css";
 import { FaStar } from "react-icons/fa6";
 import { BsPlay } from "react-icons/bs";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { ticketDetailsSliceActions } from "../../store/features/ticketDetailsSlice";
-import { useEffect, useState } from "react";
-import axios from "axios";
-
-let endpoints = [
-  "http://3.17.216.66:4000/latest",
-  "http://3.17.216.66:4000/events",
-  "http://3.17.216.66:4000/upcomingMovies",
-];
 
 const MovieDetails = () => {
   const dispatch = useDispatch();
+  const totalMoviesAvailable = useSelector(
+    (state) => state.allMovies.allMovies
+  );
   const movieId = useParams().movieId;
-  const [totalMoviesAvailable, setTotalMoviesAvailable] = useState("");
-
-  // Logic for collecting all movies data into single array
-  useEffect(() => {
-    let finalData = [];
-    axios.all(endpoints.map((endpoint) => axios.get(endpoint))).then((data) => {
-      finalData = [...data[0].data, ...data[1].data, ...data[2].data];
-
-      setTotalMoviesAvailable(finalData);
-
-      console.log(data);
-    });
-  }, []);
 
   if (!totalMoviesAvailable)
     return (

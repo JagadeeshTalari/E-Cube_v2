@@ -2,9 +2,16 @@ import { useEffect, useState } from "react";
 
 import axios from "axios";
 import Movies from "../shared/Movies";
+import { useDispatch } from "react-redux";
+import { fetchMovies } from "../../store/features/allMoviesSlice";
 
 function RecommendedMovies() {
   const [moviesList, setMoviesList] = useState(null);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchMovies());
+  }, [dispatch]);
 
   useEffect(() => {
     axios.get("http://3.17.216.66:4000/latest").then((response) => {
