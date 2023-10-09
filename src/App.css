@@ -1,0 +1,142 @@
+/* .right {
+  align-items: center; */
+/* position: relative; */
+/* } */
+/* 
+.right input {
+  width: 500px;
+  padding: 10px;
+  margin: 0 20px;
+  position: relative;
+  bottom: 10px;
+  border-radius: 6px;
+}
+
+.left select {
+  margin: 0 20px;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #e6e0e0;
+  border: none;
+  background: none;
+}
+
+.left button {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 15px;
+  border-radius: 6px;
+  background: --var(--btn-bg-color);
+  border: none;
+  color: white;
+} */
+
+/* -----------------------------movies------------------ */
+
+.seeall {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+/* ------------------------------------ */
+/* 
+.stream {
+  width: 80%;
+  margin: auto;
+}
+
+.stream img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+} */
+
+/* ----------------------------------Eventslider--------------- */
+/* 
+.Eventimg::-webkit-scrollbar,
+.Eventimg::-webkit-scrollbar {
+  display: none;
+}
+
+.Eventimg {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  position: relative;
+  overflow-x: scroll;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+.event {
+  width: 80%;
+  margin: auto;
+} */
+
+.page {
+  width: 85%;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+.page h2 {
+  color: #1e1f28;
+  margin-bottom: 1rem;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  margin-top: 3.5rem;
+  height: 100vh;
+  color: var(--primary-bg-color);
+}
+
+.bookNow-btn {
+  background-color: var(--btn-bg-color);
+  color: #fff;
+  font-size: 16px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+/* ------------------- */
+
+.shows {
+  width: 85vw;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  line-height: 1.5;
+  overflow: auto;
+}
+
+.shows::-webkit-scrollbar {
+  /* height: 0; */
+}
+
+.shows img {
+  width: 220px;
+  border-radius: 10px;
+}
+
+.rnd-button {
+  height: 50px;
+  width: 50px;
+  padding: 15px 10px;
+  border-radius: 50%;
+}
+
+.Moives-Section {
+  position: relative;
+}

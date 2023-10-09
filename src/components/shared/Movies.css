@@ -1,0 +1,10 @@
+.movieCard {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.movieCard img {
+  min-height: 350px;
+  object-fit: cover;
+}

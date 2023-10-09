@@ -1,0 +1,28 @@
+:root {
+  --primary-bg-color: #333545;
+  --btn-bg-color: #f84464;
+  --primary-txt-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  /* color: #d59a43; */
+  /* background-color: var(--primary-color); */
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-txt-color);
+}

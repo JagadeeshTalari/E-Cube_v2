@@ -1,0 +1,61 @@
+.ticketBooking__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  min-width: 300px;
+  max-width: 550px;
+  margin-top: 4rem;
+  border: 2px solid #2b2a2a;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: aliceblue;
+}
+
+.ticketBooking__content h1 {
+  font-size: 32px;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed #2b2a2a;
+}
+
+.ticketBooking__content * {
+  font-size: 20px;
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.ticketBooking__content > div {
+  display: flex;
+}
+
+.ticketBooking__content label {
+  font-weight: 500;
+}
+
+.noOfTickets {
+  border: 1px solid #000;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.noOfTickets button {
+  background-color: transparent;
+  border: 0px solid;
+  padding: 5px;
+  font-size: 24px;
+}
+
+.noOfTickets button:hover {
+  background-color: #2b2a2a12;
+  border-radius: 15px;
+}
+
+.ticketBookBtn {
+  border-radius: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}

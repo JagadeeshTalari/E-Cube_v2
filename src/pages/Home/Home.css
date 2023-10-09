@@ -1,0 +1,41 @@
+/* ----------------------------premiere----------------------- */
+
+
+.premiere {
+     width: 100%;
+     padding: 0 10%;
+     padding-top: 30px;
+     background: #2b3148;
+     /* background: #000; */
+   }
+   
+   
+   
+   .pre-cantaint {
+     width: 100%;
+     padding: 0 10%;
+     padding-top: 10px;
+     padding-bottom: 50px;
+     display: flex;
+     justify-content: space-around;
+     gap: 20px;
+     background: #2b3148;
+     color: white;
+     line-height: 1.5;
+   
+   }
+   
+   
+   .preimg img {
+     width: 200px;
+     border-radius: 10px;
+   
+   }
+   
+   .premier-heading{
+     width: 100%;
+     padding: 0 10%;
+     background: #2b3148;
+     color: white;
+   
+   }

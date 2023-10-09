@@ -1,0 +1,65 @@
+.movie-details__page {
+  display: flex;
+  flex-direction: column;
+  color: #000;
+}
+
+.movie-details__container {
+  box-shadow: inset 650px 100px 120px 10px #212121,
+    inset -200px 10px 50px #212121;
+  color: #fff;
+  padding: 5rem 0rem;
+  background-repeat: no-repeat;
+  background-size: 65%;
+  background-position: 80% 2%;
+}
+
+.movie-details__content__container {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.movie-details__content__container img {
+  max-width: 200px;
+  min-height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.movie-details__content {
+  width: 70%;
+  padding: 0rem 2rem;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  /* color: goldenrod; */
+}
+
+.movie-details__content * {
+  display: flex;
+  align-items: center;
+}
+
+.movie-details__content div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.movie-name {
+  font-size: 40px;
+}
+
+.movie-details__content .btnEdit {
+  width: 25%;
+  /* margin-top: 2rem; */
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  border: none;
+}

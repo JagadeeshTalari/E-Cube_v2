@@ -1,0 +1,38 @@
+/* -------------slide---------------- */
+
+.slider {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.courasel {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.courasel img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 20px 0px;
+}
+
+.courasel-btn {
+  background-color: #0000006c;
+  border: transparent;
+  height: 1.5em;
+  width: 1.5em;
+  font-size: 1.6rem;
+  padding-top: 0.25rem;
+  border-radius: 50%;
+  color: #d6d2d2;
+  position: absolute;
+}
+
+.prevBtn {
+  left: 0px;
+}
+
+.nextBtn {
+  right: 0px;
+}
