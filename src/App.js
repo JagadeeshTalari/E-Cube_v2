@@ -37,11 +37,11 @@ function App() {
           element={<MovieDetails></MovieDetails>}
         ></Route>
         <Route
-          path="/ticketBooking"
+          path="/ticketBooking/:movieName"
           element={<TicketBooking></TicketBooking>}
         ></Route>
         <Route
-          path="/finalBooking"
+          path="/finalBooking/:movieNameRoute"
           element={<FinalBooking></FinalBooking>}
         ></Route>
       </Routes>

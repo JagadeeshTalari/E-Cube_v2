@@ -51,7 +51,7 @@ const MovieDetails = () => {
               Trailer
             </p>
             <Link
-              to="/ticketBooking"
+              to={`/ticketBooking/${movieDetails.name}`}
               className="bookNow-btn btnEdit"
               onClick={() => {
                 dispatch(

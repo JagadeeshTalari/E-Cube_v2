@@ -1,10 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "./TicketBooking.css";
 import { useDispatch, useSelector } from "react-redux";
 import { ticketDetailsSliceActions } from "../../store/features/ticketDetailsSlice";
 
 const TicketBooking = () => {
   const dispatch = useDispatch();
+  const movieName = useParams().movieName;
   const { count, date } = useSelector((state) => state.tcktDetails);
   return (
     <div className="page ticketBooking__page">
@@ -55,7 +56,7 @@ const TicketBooking = () => {
             </button>
           </div>
         </div>
-        <Link to="/finalBooking">
+        <Link to={`/finalBooking/${movieName}`}>
           <button className="bookNow-btn ticketBookBtn">Book Now</button>
         </Link>
       </div>
