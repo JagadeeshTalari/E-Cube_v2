@@ -6,10 +6,13 @@ function NearbyEvents() {
   const [moviesList, setMoviesList] = useState(null);
 
   useEffect(() => {
-    axios.get("http://3.17.216.66:4000/events").then((response) => {
-      setMoviesList(response.data);
-      console.log(response.data);
-    });
+    const fetchNearbyEvents = async () => {
+      await axios.get("http://3.17.216.66:4000/events").then((response) => {
+        setMoviesList(response.data);
+        console.log(response.data);
+      });
+    };
+    fetchNearbyEvents();
   }, []);
 
   if (!moviesList)

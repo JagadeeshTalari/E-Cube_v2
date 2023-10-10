@@ -6,10 +6,13 @@ function LatestMovies() {
   const [moviesList, setMoviesList] = useState(null);
 
   useEffect(() => {
-    axios.get("http://3.17.216.66:4000/latest").then((response) => {
-      setMoviesList(response.data);
-      console.log(response.data);
-    });
+    const fetchLatest = async () => {
+      await axios.get("http://3.17.216.66:4000/latest").then((response) => {
+        setMoviesList(response.data);
+        console.log(response.data);
+      });
+    };
+    fetchLatest();
   }, []);
 
   if (!moviesList)

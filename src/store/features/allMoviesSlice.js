@@ -13,15 +13,18 @@ let endpoints = [
 //   });
 // });
 
-export const fetchMovies = createAsyncThunk("allMovies/fetchMovies", () => {
-  return axios
-    .all(endpoints.map((endpoint) => axios.get(endpoint)))
-    .then((data) => {
-      let finalData = [...data[0].data, ...data[1].data, ...data[2].data];
+export const fetchMovies = createAsyncThunk(
+  "allMovies/fetchMovies",
+  async () => {
+    return await axios
+      .all(endpoints.map((endpoint) => axios.get(endpoint)))
+      .then((data) => {
+        let finalData = [...data[0].data, ...data[1].data, ...data[2].data];
 
-      return finalData;
-    });
-});
+        return finalData;
+      });
+  }
+);
 
 const allMoviesSlice = createSlice({
   name: "allMovies",
